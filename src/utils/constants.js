@@ -1,5 +1,5 @@
 const constants = {}
-constants.organization = 'poanetwork'
+constants.organization = 'makerdao'
 constants.repoName = 'poa-chain-spec'
 constants.addressesSourceFile = 'contracts.json'
 constants.ABIsSources = {
@@ -11,9 +11,7 @@ constants.ABIsSources = {
 constants.userDeniedTransactionPattern = 'User denied transaction'
 constants.rootPath = '/poa-dapps-validators'
 constants.branches = {
-  DAI: 'dai',
-  CORE: 'core',
-  SOKOL: 'sokol'
+  MAKER: 'maker'
 }
 
 constants.navigationData = [
@@ -35,23 +33,11 @@ constants.navigationData = [
 ]
 
 constants.NETWORKS = {
-  '77': {
-    NAME: 'Sokol',
-    RPC: 'https://sokol.poa.network',
-    BRANCH: constants.branches.SOKOL,
+  '176': {
+    NAME: 'Maker',
+    RPC: 'https://xdai-rpc.makerfoundation.com',
+    BRANCH: constants.branches.MAKER,
     TESTNET: true
-  },
-  '99': {
-    NAME: 'Core',
-    RPC: 'https://core.poa.network',
-    BRANCH: constants.branches.CORE,
-    TESTNET: false
-  },
-  '100': {
-    NAME: 'Dai',
-    RPC: 'https://dai.poa.network',
-    BRANCH: constants.branches.DAI,
-    TESTNET: false
   }
 }
 
